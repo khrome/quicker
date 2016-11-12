@@ -1,0 +1,28 @@
+#!/usr/bin/env node
+var argv;
+var yargs = require('yargs');
+var fs = require('fs');
+var ComicViewer = require('../viewer');
+yargs.usage('Usage: $0 [options]')
+yargs.example('$0 -d ~/foo/MyComic/ ', 'slideshow this comic')
+    .demand('d')
+    	.alias('d', 'directory')
+    	.nargs('d', 1)
+    	.describe('d', 'The path of the comic')
+    .alias('f', 'fullscreen')
+    	.nargs('f', 0)
+    	.describe('f', 'fullscreen')
+    .alias('i', 'interval')
+    	.nargs('i', 1)
+    	.describe('i', 'interval between files (in ms)')
+    .help('h')
+    .alias('h', 'help')
+    .epilog('©2016 - Abbey Hawk Sparrow');
+argv = yargs.argv;
+var viewer = new ComicViewer({
+    fullscreen: !!argv.f,
+    interval: argv.i && parseInt(argv.i)
+});
+viewer.read(argv.d, function(){
+    
+});
