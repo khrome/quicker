@@ -1,6 +1,6 @@
 quicker
 =======
-View a series of images on autopilot, from the command-line via quicklook. Perfect for comics or archived image sets. Perfect for displaying your auto-generated slideshow!
+View a series of images on autopilot, from the command-line via quicklook. Perfect for comics, archived image sets or displaying an auto-generated slideshow!
 
 Due to the quicklook requirement this is currently OS X only.
 
