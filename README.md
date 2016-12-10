@@ -1,8 +1,8 @@
 quicker
 =======
-View a series of images on autopilot, from the command-line via quicklook. Perfect for comics, archived image sets or displaying an auto-generated slideshow!
+View a series of images on autopilot, from the command-line via quicklook. Perfect for comics, archived image sets or displaying an auto-generated slideshow! Also supports viewing via the terminal.
 
-Due to the quicklook requirement this is currently OS X only.
+Using quicklook requires OS X.
 
 It currently only supports directories of unpacked images. If you are interested in .cbr/.cbz support... contact me. 
 
@@ -20,6 +20,7 @@ Type `quicker -h` to get:
 	Options:
 	  -d, --directory   The path of the comic                             [required]
 	  -f, --fullscreen  fullscreen
+	  -H, --headless    display images as ascii console output
 	  -i, --interval    interval between files (in ms)
 	  -h, --help        Show help                                          [boolean]
 	

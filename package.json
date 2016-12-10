@@ -1,7 +1,7 @@
 {
     "name": "quicker",
     "homepage": "https://github.com/khrome/quicker",
-    "version": "0.0.1",
+    "version": "0.2.0",
     "main": "viewer.js",
     "description": "View Images Serially",
     "keywords": [
